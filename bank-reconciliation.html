@@ -1,0 +1,252 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-bank-reconciliation" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.2"><title data-rh=true>Bank reconciliation | Akaun</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://getakaun.github.io/bank-reconciliation /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Bank reconciliation | Akaun"/><meta data-rh=true name=description content="Bank reconciliation is a check of one account against the statement from your bank. You match"/><meta data-rh=true property=og:description content="Bank reconciliation is a check of one account against the statement from your bank. You match"/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://getakaun.github.io/bank-reconciliation /><link data-rh=true rel=alternate href=https://getakaun.github.io/bank-reconciliation hreflang=en /><link data-rh=true rel=alternate href=https://getakaun.github.io/bank-reconciliation hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://getakaun.github.io/bank-reconciliation","name":"Bank reconciliation","position":1}]}</script><link rel=stylesheet href=/assets/css/styles.642691cf.css /><script src=/assets/js/runtime~main.093a28fa.js defer></script><script src=/assets/js/main.cbaae5ee.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-141")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/logo.png /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo.png alt=Akaun class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/logo.png alt=Akaun class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Akaun</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/>Guide</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/getakaun/akaun target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><svg aria-hidden=true class=searchIcon_T3tP focusable=false viewBox="0 0 16 16"><path fill=currentColor d="M6.02945 10.20327a4.17382 4.17382 0 1 1 4.17382-4.17382 4.15609 4.15609 0 0 1-4.17382 4.17382Zm9.69195 4.2199-4.8225-4.82338A5.88021 5.88021 0 0 0 12.058 6.02856 6.00467 6.00467 0 1 0 9.59979 10.8989l4.82338 4.82338a.89729.89729 0 0 0 1.29912 0 .89749.89749 0 0 0-.00087-1.29909Z"/></svg><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/><span class=linkLabel_WmDU>Akaun</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/getting-started><span class=categoryLinkLabel_W154>Getting started</span></a><button aria-label="Expand sidebar category 'Getting started'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/how-akaun-works><span class=categoryLinkLabel_W154>How Akaun works</span></a><button aria-label="Expand sidebar category 'How Akaun works'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/everyday-tasks><span class=categoryLinkLabel_W154>Everyday tasks</span></a><button aria-label="Expand sidebar category 'Everyday tasks'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/auto-import><span class=categoryLinkLabel_W154>Auto Import</span></a><button aria-label="Expand sidebar category 'Auto Import'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/sales><span class=categoryLinkLabel_W154>Quotations and invoices</span></a><button aria-label="Expand sidebar category 'Quotations and invoices'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/contacts><span class=linkLabel_WmDU>Contacts</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/bank-reconciliation><span class=linkLabel_WmDU>Bank reconciliation</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/reports><span class=categoryLinkLabel_W154>Dashboard and reports</span></a><button aria-label="Expand sidebar category 'Dashboard and reports'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/administration><span class=categoryLinkLabel_W154>Administration</span></a><button aria-label="Expand sidebar category 'Administration'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/category/help><span class=categoryLinkLabel_W154>Help</span></a><button aria-label="Expand sidebar category 'Help'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Bank reconciliation</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Bank reconciliation</h1></header>
+<p>Bank reconciliation is a check of one account against the statement from your bank. You match
+each statement line to a record in Akaun. When each line has a match, Akaun and the bank agree.
+Do this check each month, after the bank sends the statement.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=before-you-start>Before you start<a href=#before-you-start class=hash-link aria-label="Direct link to Before you start" title="Direct link to Before you start" translate=no>​</a></h2>
+<p>You need these things:</p>
+<ul>
+<li class="">The <strong>Reconciliation</strong> permission. <strong>View</strong> lets you open the screens. <strong>Add</strong> lets you upload a
+statement, retry a failed statement and record a line as a transfer. <strong>Change</strong> lets you save a
+match, correct a line and move a statement to a different account. <strong>Delete</strong> lets you delete a
+statement or a statement line. See
+<a class="" href=/administration/permissions-explained>Permissions explained</a>.</li>
+<li class="">An AI provider. Akaun uses the AI provider to read the lines of a statement. See
+<a class="" href=/auto-import/connect-an-ai-provider>Connect an AI provider</a>.</li>
+<li class="">The statement as a PDF, JPEG or PNG file. The file can be 15 MB or smaller.</li>
+<li class="">The records for the period of the statement. Record each expense, income and transfer first.</li>
+</ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>info</div><div class=admonitionContent_BuS1><p>You reconcile an account from its account page. <strong>Reconcile</strong> shows only on an active account,
+and only if you have the <strong>View</strong> permission on <strong>Reconciliation</strong>.</div></div>
+<p>To open the reconciliation screen of an account:</p>
+<ol>
+<li class="">Click <strong>Accounts</strong>.</li>
+<li class="">Click the account, for example <strong>Bank</strong>.</li>
+<li class="">Click <strong>Reconcile</strong>.</li>
+</ol>
+<p>If the account has statements that are not complete, the button shows their number, for example
+<strong>Reconcile · 2 open</strong>.</p>
+<p>The <strong>Bank reconciliation</strong> screen shows the statements of this account. Below the title, Akaun
+shows the amount that is still to clear.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=upload-a-statement>Upload a statement<a href=#upload-a-statement class=hash-link aria-label="Direct link to Upload a statement" title="Direct link to Upload a statement" translate=no>​</a></h2>
+<ol>
+<li class="">On the <strong>Bank reconciliation</strong> screen, click <strong>Upload Statement</strong>.</li>
+<li class="">Click <strong>Choose a PDF, JPEG or PNG</strong>.</li>
+<li class="">Select the statement file.</li>
+<li class="">Click <strong>Upload</strong>.</li>
+</ol>
+<p>Akaun shows "Statement extraction started". The new statement shows in the list with the status
+<strong>Extracting</strong>. When Akaun has read the lines, the status changes to <strong>Active</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-list-of-statements>The list of statements<a href=#the-list-of-statements class=hash-link aria-label="Direct link to The list of statements" title="Direct link to The list of statements" translate=no>​</a></h3>
+<p>The list has these columns:</p>
+<ul>
+<li class=""><strong>Statement</strong>: the file name and the date of the upload.</li>
+<li class=""><strong>Date Range</strong>: the date of the first line and the last line.</li>
+<li class=""><strong>Status</strong>: <strong>Extracting</strong>, <strong>Failed</strong>, <strong>Active</strong> or <strong>Matched</strong>.</li>
+<li class=""><strong>Matched</strong>: the number of statement lines with a full match, out of all lines.</li>
+<li class=""><strong>Remaining</strong>: the amount of the statement lines that has no match yet.</li>
+</ul>
+<p>The <strong>Status</strong> filter has two choices, each with a count, for example <strong>Active (2)</strong>. <strong>Active</strong>
+shows the statements that you must still work on. <strong>Completed</strong> shows the statements with a full
+match on each line. At the start, only <strong>Active</strong> is on. Use <strong>Search statements…</strong> to find a
+statement by its file name.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=open-the-statement-drawer>Open the statement drawer<a href=#open-the-statement-drawer class=hash-link aria-label="Direct link to Open the statement drawer" title="Direct link to Open the statement drawer" translate=no>​</a></h3>
+<p>The statement drawer shows the numbers of one statement and its actions.</p>
+<ol>
+<li class="">Find the statement in the list.</li>
+<li class="">Click the three-dot button (<strong>Statement options</strong>) at the end of the row.</li>
+</ol>
+<p>The drawer shows <strong>Lines</strong>, <strong>Matched</strong> and <strong>Remaining</strong>. <strong>Lines</strong> is the number of statement
+lines. <strong>Matched</strong> is the number of lines with a full match. <strong>Remaining</strong> is the amount without a
+match. Click <strong>Match this statement</strong> to open the match screen.</p>
+<p>If you uploaded the statement to the wrong account, choose the correct account in <strong>Account this
+statement belongs to</strong>. You can move a statement only before it has a match. This field shows only
+if you have the <strong>Change</strong> permission.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=if-the-upload-fails>If the upload fails<a href=#if-the-upload-fails class=hash-link aria-label="Direct link to If the upload fails" title="Direct link to If the upload fails" translate=no>​</a></h3>
+<p>If Akaun cannot read the file, the status is <strong>Failed</strong>. The drawer shows the reason.</p>
+<ol>
+<li class="">Open the statement drawer.</li>
+<li class="">Read the reason.</li>
+<li class="">Click <strong>Retry Extraction</strong>.</li>
+</ol>
+<p>If the retry fails again, delete the statement. Then upload a clearer file.</p>
+<p>If no AI provider is enabled, the statement fails. Add a provider, and then retry.</p>
+<p>The reason can tell you to add the transactions manually. Akaun has no control to add a statement
+line. Upload a different file of the statement instead.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=delete-a-statement>Delete a statement<a href=#delete-a-statement class=hash-link aria-label="Direct link to Delete a statement" title="Direct link to Delete a statement" translate=no>​</a></h3>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 16 16"><path fill-rule=evenodd d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></span>caution</div><div class=admonitionContent_BuS1><p>You cannot undo this. Akaun deletes the statement, its lines and all their matches. Each record
+that only this statement matched is then not cleared.</div></div>
+<ol>
+<li class="">Open the statement drawer.</li>
+<li class="">Click <strong>Delete</strong>.</li>
+<li class="">Click <strong>Delete statement</strong>.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=match-the-lines>Match the lines<a href=#match-the-lines class=hash-link aria-label="Direct link to Match the lines" title="Direct link to Match the lines" translate=no>​</a></h2>
+<ol>
+<li class="">In the list of statements, click the statement.</li>
+<li class="">Click a record in the list on the left.</li>
+<li class="">Make sure that the correct statement lines are ticked.</li>
+<li class="">Click <strong>Save & Next</strong>.</li>
+</ol>
+<p>Akaun saves the match and opens the next record. If no other record needs a match, the button is
+<strong>Save</strong>. You need the <strong>Change</strong> permission to save.</p>
+<p>The match screen has three parts:</p>
+<ul>
+<li class="">The list of records. Each row shows the record, the <strong>Account</strong>, the <strong>Date</strong>, the <strong>Total</strong>,
+the <strong>Match</strong> status and the amount that is <strong>Remaining</strong>.</li>
+<li class="">The match panel, beside the list. It shows the record that you clicked.</li>
+<li class=""><strong>Extracted Transactions</strong>, below the list. These are the lines that Akaun read from the
+statement.</li>
+</ul>
+<p>The title of the screen shows the file name. Below it, Akaun shows the status of the statement,
+the number of records to match and the amount of the statement lines without a match. Click
+<strong>Source file</strong> to open the uploaded file in a new tab.</p>
+<p>A statement line can match only a record that used the account of the statement. The list of
+records can also show records from other accounts that have a statement. These records have no
+lines to match. Look at the <strong>Account</strong> column, and do not choose them.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=find-a-record>Find a record<a href=#find-a-record class=hash-link aria-label="Direct link to Find a record" title="Direct link to Find a record" translate=no>​</a></h3>
+<ul>
+<li class="">Type in <strong>Search records…</strong> to filter the list. Akaun searches the description, the contact,
+the account and the kind of each record.</li>
+<li class="">Click <strong>Date</strong>, and then choose a <strong>From</strong> date, a <strong>To</strong> date or both. The list then shows only
+the records in that period. Click <strong>Clear</strong> to remove the dates.</li>
+</ul>
+<p>On a narrow screen, the date filter is under <strong>Filters</strong>. The bottom of the list shows how many records
+the filters show, for example "Showing 8 of 20".</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=how-akaun-suggests-a-match>How Akaun suggests a match<a href=#how-akaun-suggests-a-match class=hash-link aria-label="Direct link to How Akaun suggests a match" title="Direct link to How Akaun suggests a match" translate=no>​</a></h3>
+<p>Akaun looks for statement lines that have the same direction as the record: money in or money out.
+The total of the lines must be equal to the amount of the record. If Akaun finds them, the record
+shows <strong>Exact match</strong>. If more than one set fits, Akaun prefers lines with a date near the date of
+the record.</p>
+<p>The <strong>Match</strong> column shows one of these statuses:</p>
+<ul>
+<li class=""><strong>Exact match</strong>: Akaun found statement lines with exactly the amount of the record.</li>
+<li class=""><strong>Partial</strong>: some of the amount has a match, but not all of it.</li>
+<li class=""><strong>No match</strong>: Akaun found no lines that fit.</li>
+<li class=""><strong>Matched</strong>: statement lines cover the full amount of the record.</li>
+</ul>
+<p>The list shows <strong>Exact match</strong> records first, then <strong>Partial</strong>, then <strong>No match</strong>, then
+<strong>Matched</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=the-match-panel>The match panel<a href=#the-match-panel class=hash-link aria-label="Direct link to The match panel" title="Direct link to The match panel" translate=no>​</a></h3>
+<p>When you click a record, the panel shows three amounts:</p>
+<ul>
+<li class=""><strong>Total</strong>: the amount of the record.</li>
+<li class=""><strong>Staged</strong>: the total of the ticked statement lines.</li>
+<li class=""><strong>Remaining</strong>: the amount of the record that has no line yet.</li>
+</ul>
+<p>If Akaun found an exact match, it ticks those lines for you. The panel then shows
+<strong>Auto-matched</strong>. If you change the ticks, the panel shows <strong>Exact Match Found</strong>. Click <strong>Use
+Suggested Match</strong> to tick the suggested lines again.</p>
+<p><strong>Compatible Statement Lines</strong> lists the lines that can match this record. A record of money into
+the account shows <strong>Credit</strong> lines. A record of money out of the account shows <strong>Debit</strong> lines. Each line shows
+the amount that is still available.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=match-a-part-of-a-line>Match a part of a line<a href=#match-a-part-of-a-line class=hash-link aria-label="Direct link to Match a part of a line" title="Direct link to Match a part of a line" translate=no>​</a></h3>
+<p>One record can use more than one statement line. One statement line can also go to more than one
+record. For example, the bank shows one line of 500.00. In Akaun, you have two records: 300.00 and
+200.00.</p>
+<ol>
+<li class="">Click the record of 300.00.</li>
+<li class="">Tick the line of 500.00.</li>
+<li class="">Make sure that the amount beside the line is 300.00.</li>
+<li class="">Click <strong>Save & Next</strong>.</li>
+<li class="">Click the record of 200.00.</li>
+<li class="">Tick the same line.</li>
+<li class="">Click <strong>Save & Next</strong>.</li>
+</ol>
+<p>The line now has 0.00 available, and both records show <strong>Matched</strong>.</p>
+<p>The staged total cannot be more than the amount of the record. If it is more, the panel shows the
+difference in red, for example "50.00 over record total". You cannot save until you correct it.</p>
+<p>Click <strong>Reset</strong> to remove the changes that you did not save.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=save-all-exact-matches>Save all exact matches<a href=#save-all-exact-matches class=hash-link aria-label="Direct link to Save all exact matches" title="Direct link to Save all exact matches" translate=no>​</a></h3>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 16 16"><path fill-rule=evenodd d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></span>caution</div><div class=admonitionContent_BuS1><p>This saves many matches at one time. To remove a match later, you must clear it one record at a
+time.</div></div>
+<ol>
+<li class="">Click <strong>Save <em>n</em> exact matches</strong>. For example, <strong>Save 12 exact matches</strong>.</li>
+<li class="">Read the message.</li>
+<li class="">Click <strong>Save Matches</strong>.</li>
+</ol>
+<p>Akaun saves the suggested lines for each record that shows <strong>Exact match</strong>. It does not change a
+record that already has a part of a match. A record is skipped if a different record used its
+lines first. Akaun then shows the number of records that it matched and skipped.</p>
+<p>The button counts only the records that the list shows. If you search or filter the list, the
+button saves only the matches in the filtered list. You need the <strong>Change</strong> permission to see the
+button.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=correct-a-statement-line>Correct a statement line<a href=#correct-a-statement-line class=hash-link aria-label="Direct link to Correct a statement line" title="Direct link to Correct a statement line" translate=no>​</a></h3>
+<p>Sometimes Akaun reads a line incorrectly. You can correct the line.</p>
+<ol>
+<li class="">In <strong>Extracted Transactions</strong>, click the line.</li>
+<li class="">Change <strong>Date</strong>, <strong>Description</strong>, <strong>Amount</strong>, <strong>Direction</strong> or <strong>Note</strong>.</li>
+</ol>
+<p>Akaun saves each change when you leave the field. You need the <strong>Change</strong> permission. In <strong>Direction</strong>, <strong>Credit</strong> is money into the account.
+<strong>Debit</strong> is money out of the account.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=record-a-line-as-a-transfer>Record a line as a transfer<a href=#record-a-line-as-a-transfer class=hash-link aria-label="Direct link to Record a line as a transfer" title="Direct link to Record a line as a transfer" translate=no>​</a></h3>
+<p>Some statement lines have no record, because the money moved between two of your own accounts. For
+example, you moved money from <strong>Bank</strong> to <strong>Cash</strong>. Akaun can make the transfer record for you.</p>
+<ol>
+<li class="">In <strong>Extracted Transactions</strong>, click the line.</li>
+<li class="">Click <strong>Record as a transfer from another account</strong>.</li>
+<li class="">Choose the other account.</li>
+<li class="">Optional: change the <strong>Description</strong>.</li>
+<li class="">Click <strong>Save & Match</strong>.</li>
+</ol>
+<p>For money into the account, the field of the other account is <strong>From account</strong>. For money out of
+the account, it is <strong>To account</strong>.</p>
+<p>Akaun makes a <strong>Transfer</strong> record in the main currency, with the date and amount of the line. Then
+it matches the line to the transfer. The button shows only on a line without a match. You need the
+<strong>Add</strong> permission.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=delete-a-statement-line>Delete a statement line<a href=#delete-a-statement-line class=hash-link aria-label="Direct link to Delete a statement line" title="Direct link to Delete a statement line" translate=no>​</a></h3>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 16 16"><path fill-rule=evenodd d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></span>caution</div><div class=admonitionContent_BuS1><p>You cannot undo this. Akaun deletes the line and all its matches.</div></div>
+<ol>
+<li class="">In <strong>Extracted Transactions</strong>, click the line.</li>
+<li class="">Click <strong>Delete Transaction</strong>.</li>
+<li class="">In the dialog, click <strong>Delete Transaction</strong>.</li>
+</ol>
+<p>You need the <strong>Delete</strong> permission.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=remove-a-match>Remove a match<a href=#remove-a-match class=hash-link aria-label="Direct link to Remove a match" title="Direct link to Remove a match" translate=no>​</a></h3>
+<ol>
+<li class="">Click the record that has the match.</li>
+<li class="">Remove the tick from each statement line.</li>
+<li class="">Click <strong>Save & Next</strong> or <strong>Save</strong>.</li>
+</ol>
+<p>The record then has no match. If nothing else locks it, you can change its amount, date and money
+account again.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=finish-a-statement>Finish a statement<a href=#finish-a-statement class=hash-link aria-label="Direct link to Finish a statement" title="Direct link to Finish a statement" translate=no>​</a></h2>
+<p>A statement is complete when each of its lines has a full match. Its status then changes to
+<strong>Matched</strong>. It moves from <strong>Active</strong> to <strong>Completed</strong>. You do not click a button to complete a
+statement.</p>
+<p>If a statement line has no record, do one of these things:</p>
+<ul>
+<li class="">Add the missing record on the <strong>Records</strong> screen. Then match the line.</li>
+<li class="">If the money moved between two of your accounts, record the line as a transfer.</li>
+<li class="">If the line is wrong or appears two times, delete the line.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=what-a-match-does-to-a-record>What a match does to a record<a href=#what-a-match-does-to-a-record class=hash-link aria-label="Direct link to What a match does to a record" title="Direct link to What a match does to a record" translate=no>​</a></h2>
+<ul>
+<li class="">When statement lines cover the full amount of a record, the record is cleared. On the <strong>Records</strong>
+screen, a record without a full match shows <strong>Not cleared</strong>.</li>
+<li class="">When a record has a match, also a part match, the record page shows <strong>Matched to the bank</strong> in
+the <strong>Bank</strong> section.</li>
+<li class="">A record with a match, also a part match, is locked. You cannot change its amount, date or money account, and you
+cannot delete it. See <a class="" href=/concepts/locked-records>Locked records</a>.</li>
+</ul>
+<p>Cleared and paid are different. <strong>Paid</strong> tells that the money has moved. <strong>Cleared</strong> tells that the
+bank agrees.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=notes>Notes<a href=#notes class=hash-link aria-label="Direct link to Notes" title="Direct link to Notes" translate=no>​</a></h2>
+<ul>
+<li class="">To find the records of all accounts without a full match, use the <strong>Not yet cleared</strong> filter on
+the <strong>Records</strong> screen. See <a class="" href=/everyday-tasks/find-records>Find records</a>.</li>
+<li class="">On a narrow screen, the match panel opens as a drawer.</li>
+<li class="">If you open a different record or leave the match screen with changes that you did not save,
+Akaun asks you first. Click <strong>Discard Changes</strong> to continue without them.</li>
+<li class="">An AI provider can make mistakes. Compare the <strong>Matched</strong> count and the <strong>Remaining</strong> amount with
+the statement from the bank.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=related>Related<a href=#related class=hash-link aria-label="Direct link to Related" title="Direct link to Related" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/concepts/locked-records>Locked records</a></li>
+<li class=""><a class="" href=/everyday-tasks/move-money-between-accounts>Move money between accounts</a></li>
+<li class=""><a class="" href=/everyday-tasks/find-records>Find records</a></li>
+<li class=""><a class="" href=/auto-import/connect-an-ai-provider>Connect an AI provider</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/getakaun/akaun/tree/main/docs/docs/07-bank-reconciliation.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/contacts><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Contacts</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/category/reports><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Dashboard and reports</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#before-you-start class="table-of-contents__link toc-highlight">Before you start</a><li><a href=#upload-a-statement class="table-of-contents__link toc-highlight">Upload a statement</a><ul><li><a href=#the-list-of-statements class="table-of-contents__link toc-highlight">The list of statements</a><li><a href=#open-the-statement-drawer class="table-of-contents__link toc-highlight">Open the statement drawer</a><li><a href=#if-the-upload-fails class="table-of-contents__link toc-highlight">If the upload fails</a><li><a href=#delete-a-statement class="table-of-contents__link toc-highlight">Delete a statement</a></ul><li><a href=#match-the-lines class="table-of-contents__link toc-highlight">Match the lines</a><ul><li><a href=#find-a-record class="table-of-contents__link toc-highlight">Find a record</a><li><a href=#how-akaun-suggests-a-match class="table-of-contents__link toc-highlight">How Akaun suggests a match</a><li><a href=#the-match-panel class="table-of-contents__link toc-highlight">The match panel</a><li><a href=#match-a-part-of-a-line class="table-of-contents__link toc-highlight">Match a part of a line</a><li><a href=#save-all-exact-matches class="table-of-contents__link toc-highlight">Save all exact matches</a><li><a href=#correct-a-statement-line class="table-of-contents__link toc-highlight">Correct a statement line</a><li><a href=#record-a-line-as-a-transfer class="table-of-contents__link toc-highlight">Record a line as a transfer</a><li><a href=#delete-a-statement-line class="table-of-contents__link toc-highlight">Delete a statement line</a><li><a href=#remove-a-match class="table-of-contents__link toc-highlight">Remove a match</a></ul><li><a href=#finish-a-statement class="table-of-contents__link toc-highlight">Finish a statement</a><li><a href=#what-a-match-does-to-a-record class="table-of-contents__link toc-highlight">What a match does to a record</a><li><a href=#notes class="table-of-contents__link toc-highlight">Notes</a><li><a href=#related class="table-of-contents__link toc-highlight">Related</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Start here</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/>Introduction</a><li class=footer__item><a class=footer__link-item href=/category/getting-started>Getting started</a><li class=footer__item><a class=footer__link-item href=/category/how-akaun-works>How Akaun works</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Help</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/help/troubleshooting>Troubleshooting</a><li class=footer__item><a class=footer__link-item href=/help/glossary>Glossary</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://github.com/getakaun/akaun target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Akaun. Built with Docusaurus.</div></div></div></footer></div></body>
